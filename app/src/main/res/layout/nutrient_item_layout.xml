@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/btnInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_info_outline_black_36dp"
+        android:layout_margin="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+    <View
+        android:id="@+id/devider1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/btnInfo"
+        android:layout_toEndOf="@+id/btnInfo"
+        />
+    <TextView
+        android:id="@+id/txtNutriName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/devider1"
+        android:layout_toEndOf="@+id/devider1"
+        android:layout_alignParentTop="true"
+        android:layout_alignTop="@+id/btnInfo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:text="Calcium"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/txtNutriDose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNutriName"
+        android:layout_toEndOf="@+id/txtDose"
+        android:layout_toRightOf="@+id/txtDose"
+        android:text="10%"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <TextView
+        android:id="@+id/txtDose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNutriName"
+        android:layout_marginLeft="55dp"
+        android:layout_marginStart="55dp"
+        android:layout_toRightOf="@+id/btnInfo"
+        android:layout_toEndOf="@+id/btnInfo"
+        android:text="@string/dose"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

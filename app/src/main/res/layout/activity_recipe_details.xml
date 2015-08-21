@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="vertical">
+
+    <HorizontalScrollView
+        android:id="@+id/hsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true"
+        android:measureAllChildren="false"
+        android:scrollbars="none">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/shortcuts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/ingred_nutri_bckg"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/txtCuisine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.02"
+                android:background="@android:color/transparent"
+                android:drawablePadding="4dp"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="Cuisine:\nAmerican"
+                android:textColor="@color/primary_text"
+                android:textSize="13sp" />
+
+            <View
+                android:id="@+id/divider_servings"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/accent" />
+
+            <TextView
+                android:id="@+id/txtServings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawablePadding="4dp"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="Servings:\n1 9x9-inch dish"
+                android:textColor="@color/primary_text"
+                android:textSize="12sp" />
+
+            <View
+                android:id="@+id/divider_servings_size"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/accent" />
+
+            <TextView
+                android:id="@+id/txtServingsSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawablePadding="4dp"
+                android:gravity="center_horizontal"
+                android:maxLines="3"
+                android:padding="8dp"
+                android:text="Servings size:\n1/8"
+                android:textColor="@color/primary_text"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lstIngredients"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/anchor"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/hsv"
+        android:layout_margin="5dp"
+        android:background="@color/ingred_nutri_bckg"
+        android:scrollbars="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <View
+        android:id="@+id/anchor"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lstNutrients"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignEnd="@+id/lstIngredients"
+        android:layout_alignLeft="@+id/lstIngredients"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/lstIngredients"
+        android:layout_alignStart="@+id/lstIngredients"
+        android:layout_below="@+id/anchor"
+        android:layout_margin="5dp"
+        android:background="@color/ingred_nutri_bckg"
+        android:scrollbars="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

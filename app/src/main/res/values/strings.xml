@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">All Recipes</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_search">Search</string>
+    <string name="search_result">Search result</string>
+    <string name="search_hint">Recipe name&#8230;</string>
+    <string name="no_favorites">No favorite recipes</string>
+    <string name="recipe_details">Recipe Details</string>
+
+    <string name="dinner">Dinner</string>
+    <string name="dessert">Dessert</string>
+    <string name="entertaining">Entertaining</string>
+    <string name="healthy">Healthy</string>
+    <string name="shoppingCart">Shopping Cart</string>
+    <string name="favorite">Favorites</string>
+
+    <!-- Shopping cart -->
+    <string name="item_name">Name:</string>
+    <string name="item_quantity">Quantity:</string>
+    <string name="shopping_cart_title">Shopping cart</string>
+    <string name="btn_add_item_text">Add</string>
+    <string name="btn_cancel_item">Cancel</string>
+
+    <string-array name="categories">
+        <item>More Dinner</item>
+        <item>More Desserts</item>
+        <item>More Entertaining</item>
+        <item>More Healthy</item>
+        <item>Shopping cart</item>
+        <item>Favorites</item>
+    </string-array>
+
+    <!-- connection check strings -->
+    <string name="connection_title">Check connection</string>
+    <string name="connection_message">Please turn on Wi-Fi or Mobile Data.</string>
+    <string name="connection_cancel_dialog">Cancel</string>
+    <string name="connection_ok_dialog">Connect</string>
+
+    <!-- ingredients -->
+    <string name="qty">Qty:</string>
+    <string name="dose">Dose:</string>
+    <!-- nutrients -->
+</resources>

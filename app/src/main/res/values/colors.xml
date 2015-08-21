@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#D32F2F</color>
+    <color name="primary_dark">#B71C1C</color>
+    <color name="primary_light">#EF5350</color>
+    <color name="accent">#B60B0B</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+
+    <color name="black_color">#000000</color>
+    <color name="shadow_color">#757575</color>
+    <color name="ingred_nutri_bckg">#80FFFFFF</color>
+</resources>
